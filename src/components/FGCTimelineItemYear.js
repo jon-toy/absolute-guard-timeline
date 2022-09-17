@@ -22,7 +22,7 @@ export default function FGCTimelineItemYear({ year }) {
           variant="filled"
           sx={{ padding: "12px 8px" }}
         >
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" sx={{ fontWeight: "bold" }}>
             {year}
           </Typography>
         </TimelineDot>

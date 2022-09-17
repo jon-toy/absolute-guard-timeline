@@ -8,24 +8,32 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
-import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
+import SportsEsportsRoundedIcon from "@mui/icons-material/SportsEsportsRounded";
 import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import PersonIcon from "@mui/icons-material/Person";
 
 export default function FGCTimelineItem({ data }) {
   let icon = <AccountCircleRoundedIcon />;
+  let variant = "outlined";
+  let timelineDotColor = "primary";
   switch (data.eventType) {
     case "Game Release":
-      icon = <SportsEsportsOutlinedIcon />;
+      icon = <SportsEsportsRoundedIcon color="secondary" />;
+      variant = "filled";
+      timelineDotColor = "grey";
       break;
     case "National Event":
+      variant = "filled";
+      timelineDotColor = "secondary";
       icon = <PublicOutlinedIcon />;
       break;
     case "Local Event":
       icon = <LocationCityOutlinedIcon />;
       break;
     case "Player Event":
-      icon = <AccountCircleOutlinedIcon />;
+      variant = "filled";
+      icon = <PersonIcon color="neutral" />;
       break;
     default:
   }
@@ -39,24 +47,22 @@ export default function FGCTimelineItem({ data }) {
         variant="body2"
         color="text.secondary"
       >
-        {
-          data.relevantGuests
-          /* {data.relevantGuests.split(",").map((guest) => {
-          if (guest.trim().length > 0)
-            return <AccountCircleRoundedIcon key={guest} />;
-          else return "";
-        })} */
-        }
+        {data.eventType}
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-        <TimelineDot color="primary" variant="outlined">
+        <TimelineDot color={timelineDotColor} variant={variant}>
           {icon}
         </TimelineDot>
         <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
       </TimelineSeparator>
       <TimelineContent sx={{ py: "24px", px: 2 }}>
-        <Typography component="span">{data.event}</Typography>
+        <Typography component="span" variant="h6">
+          {data.event}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {data.relevantGuests}
+        </Typography>
       </TimelineContent>
     </TimelineItem>
   );
