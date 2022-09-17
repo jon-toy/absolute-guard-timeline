@@ -30,6 +30,8 @@ export default function FGCTimelineItem({ data }) {
     default:
   }
 
+  if (!data.relevantGuests) data.relevantGuests = "";
+
   return (
     <TimelineItem>
       <TimelineOppositeContent
@@ -37,11 +39,14 @@ export default function FGCTimelineItem({ data }) {
         variant="body2"
         color="text.secondary"
       >
-        {data.relevantGuests.split(",").map((guest) => {
+        {
+          data.relevantGuests
+          /* {data.relevantGuests.split(",").map((guest) => {
           if (guest.trim().length > 0)
             return <AccountCircleRoundedIcon key={guest} />;
           else return "";
-        })}
+        })} */
+        }
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
