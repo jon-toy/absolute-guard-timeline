@@ -38,7 +38,9 @@ export default function FGCTimelineItem({ data }) {
         color="text.secondary"
       >
         {data.relevantGuests.split(",").map((guest) => {
-          return <AccountCircleRoundedIcon key={guest} />;
+          if (guest.trim().length > 0)
+            return <AccountCircleRoundedIcon key={guest} />;
+          else return "";
         })}
       </TimelineOppositeContent>
       <TimelineSeparator>
