@@ -10,7 +10,6 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import SportsEsportsRoundedIcon from "@mui/icons-material/SportsEsportsRounded";
 import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import PersonIcon from "@mui/icons-material/Person";
 
 export default function FGCTimelineItem({ data }) {

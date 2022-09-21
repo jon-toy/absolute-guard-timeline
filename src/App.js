@@ -5,6 +5,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import React from "react";
 import axios from "axios";
+import bg from "./podcastlayout.png";
+import Paper from "@mui/material/Paper";
+import Banner from "./components/Banner";
 
 const theme = createTheme({
   palette: {
@@ -45,10 +48,20 @@ function App() {
 
   if (!post) return null;
 
+  const styles = {
+    paperContainer: {
+      backgroundImage: `url(${bg})`,
+      backgroundAttachment: "fixed",
+    },
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <FGCTimeline rows={post.rows} />
+      <Paper style={styles.paperContainer}>
+        <Banner />
+        <FGCTimeline rows={post.rows} />
+      </Paper>
     </ThemeProvider>
   );
 }
