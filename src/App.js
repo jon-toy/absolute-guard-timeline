@@ -55,6 +55,7 @@ function App() {
       backgroundRepeat: "no-repeat",
       backgroundColor: "#cdd1c4",
       backgroundPosition: "center",
+      backgroundSize: "cover",
     },
   };
 
