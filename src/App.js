@@ -52,6 +52,7 @@ function App() {
     paperContainer: {
       backgroundImage: `url(${bg})`,
       backgroundAttachment: "fixed",
+      backgroundRepeat: "no-repeat",
     },
   };
 
