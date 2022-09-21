@@ -53,6 +53,8 @@ function App() {
       backgroundImage: `url(${bg})`,
       backgroundAttachment: "fixed",
       backgroundRepeat: "no-repeat",
+      backgroundColor: "#cdd1c4",
+      backgroundPosition: "center",
     },
   };
 
