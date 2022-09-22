@@ -66,6 +66,13 @@ export default function FGCTimelineItem({ data }) {
 
   if (!data.relevantGuests) data.relevantGuests = "";
 
+  const cardMedia = data.imageUrl ? (
+    <CardMedia component="img" height="140" image={data.imageUrl} />
+  ) : (
+    ""
+  );
+
+  // TODO: Figure out how to include the modal without breaking the alternating timeline item thing
   return (
     <div>
       <TimelineItem onClick={handleOpen}>
@@ -74,7 +81,7 @@ export default function FGCTimelineItem({ data }) {
           variant="body2"
           color="text.secondary"
         >
-          {data.eventType}
+          {data.year}
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
@@ -99,7 +106,7 @@ export default function FGCTimelineItem({ data }) {
         aria-describedby="modal-modal-description"
       >
         <Card sx={modalStyle}>
-          <CardMedia component="img" height="140" image={data.imageUrl} />
+          {cardMedia}
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {data.event}

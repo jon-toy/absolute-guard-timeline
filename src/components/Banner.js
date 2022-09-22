@@ -14,24 +14,24 @@ export default function OutlinedCard() {
       color: "#e8c547",
       fontSize: "large",
       fontWeight: "bold",
-      "&::-webkit-text-stroke-width": "1px",
-      "&::-webkit-text-stroke-color": "black",
+      "&::WebkitTextStrokeWidth": "1px",
+      "&::WebkitTextStrokeColor": "black",
     },
     subtitle: {
       color: "#e8c547",
       fontSize: "xxx-large",
       fontWeight: "bold",
-      "&::-webkit-text-stroke-width": "1px",
-      "&::-webkit-text-stroke-color": "black",
+      "&::WebkitTextStrokeWidth": "1px",
+      "&::WebkitTextStrokeColor": "black",
     },
   };
   return (
     <Paper style={styles.paperContainer}>
       <Typography style={styles.title} component="div">
-        Absolute Guard Timeline
+        Arizona FGC
       </Typography>
       <Typography style={styles.subtitle} component="div">
-        Arizona FGC
+        Absolute Guard Timeline
       </Typography>
     </Paper>
   );

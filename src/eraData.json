@@ -1,0 +1,27 @@
+[
+    {
+        "name": "The Classic Era",
+        "startYear": 1984,
+        "endYear": 1998
+    },
+    {
+        "name": "The Dark Era",
+        "startYear": 1998,
+        "endYear": 2008
+    },
+    {
+        "name": "The Revival Era",
+        "startYear": 2008,
+        "endYear": 2015
+    },
+    {
+        "name": "The Modern Era",
+        "startYear": 2015,
+        "endYear": 2023
+    },
+    {
+        "name": "The Future",
+        "startYear": 2023,
+        "endYear": -1
+    }
+]
