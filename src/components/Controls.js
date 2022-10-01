@@ -31,6 +31,7 @@ export default function Controls({ controls, handler }) {
       sx={{
         padding: "1em",
         margin: "auto",
+        maxWidth: "800px",
       }}
     >
       <FormGroup>
