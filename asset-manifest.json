@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ag.spiralseries.gg/absolute-guard-timeline/static/css/main.073c9b0a.css",
+    "main.js": "/ag.spiralseries.gg/absolute-guard-timeline/static/js/main.13cd199d.js",
+    "static/js/787.0b4688fe.chunk.js": "/ag.spiralseries.gg/absolute-guard-timeline/static/js/787.0b4688fe.chunk.js",
+    "static/media/podcastlayout.png": "/ag.spiralseries.gg/absolute-guard-timeline/static/media/podcastlayout.860ef9955362e0cf4413.png",
+    "index.html": "/ag.spiralseries.gg/absolute-guard-timeline/index.html",
+    "main.073c9b0a.css.map": "/ag.spiralseries.gg/absolute-guard-timeline/static/css/main.073c9b0a.css.map",
+    "main.13cd199d.js.map": "/ag.spiralseries.gg/absolute-guard-timeline/static/js/main.13cd199d.js.map",
+    "787.0b4688fe.chunk.js.map": "/ag.spiralseries.gg/absolute-guard-timeline/static/js/787.0b4688fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.13cd199d.js"
+  ]
+}
