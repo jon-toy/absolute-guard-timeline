@@ -9,6 +9,8 @@ export default function OutlinedCard() {
       textAlign: "center",
       backgroundColor: "#5c80bc",
       border: ".5em solid #4d5061",
+      maxWidth: "800px",
+      margin: "auto",
     },
     title: {
       color: "#e8c547",

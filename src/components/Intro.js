@@ -2,6 +2,31 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
+import { TagCloud } from "react-tagcloud";
+
+const data = [
+  { value: "Lukesballs", count: 25 },
+  { value: "Rickdawg", count: 18 },
+  { value: "Shaundude", count: 38 },
+  { value: "WillGetPaid", count: 30 },
+  { value: "Sabre", count: 28 },
+  { value: "DragonNinja", count: 25 },
+  { value: "RochKiss", count: 33 },
+  { value: "FrankAZHP", count: 20 },
+  { value: "Driftwood", count: 22 },
+  { value: "KingHippo", count: 7 },
+  { value: "NinjaNam", count: 25 },
+  { value: "Nefertiti", count: 15 },
+];
+
+// custom random color options
+// see randomColor package: https://github.com/davidmerfield/randomColor
+const options = {
+  luminosity: "dark",
+  hue: "monochrome",
+  format: "rgba",
+  alpha: 0.5, // e.g. 'rgba(9, 1, 107, 0.5)',
+};
 
 export default function Intro() {
   return (
@@ -12,6 +37,15 @@ export default function Intro() {
         maxWidth: "800px",
       }}
     >
+      <p align="center">
+        <TagCloud
+          minSize={28}
+          maxSize={35}
+          colorOptions={options}
+          tags={data}
+          onClick={(tag) => console.log("clicking on tag:", tag)}
+        />
+      </p>
       <Typography component="div">
         In our adventures interviewing guests on the Absolute Guard Podcast, we
         regularly relive or unearth significant events from within the Arizona

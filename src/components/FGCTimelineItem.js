@@ -72,6 +72,8 @@ export default function FGCTimelineItem({ data }) {
     ""
   );
 
+  console.log(data);
+
   // TODO: Figure out how to include the modal without breaking the alternating timeline item thing
   return (
     <div>
@@ -112,7 +114,9 @@ export default function FGCTimelineItem({ data }) {
               {data.event}
             </Typography>
             <Typography variant="body" color="text.secondary" component="div">
-              {data.longDescription}
+              {typeof data.longDescription === "string"
+                ? data.longDescription
+                : ""}
             </Typography>
             <Box sx={{ display: "flex", alignItems: "left", pl: 1, pb: 1 }}>
               <TimelineDot

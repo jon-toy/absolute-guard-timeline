@@ -79,9 +79,9 @@ function App() {
       <Paper style={styles.paperContainer}>
         <Banner />
         <Intro />
-        <Divider variant="middle" />
+        <Divider variant="middle" sx={{ maxWidth: "800px", margin: "auto" }} />
         <Controls controls={controls} handler={handleControls} />
-        <Divider variant="middle" />
+        <Divider variant="middle" sx={{ maxWidth: "800px", margin: "auto" }} />
         <FGCTimeline
           rows={post.rows}
           filters={defaultFilters}
