@@ -1,7 +1,7 @@
 {
   "name": "absolute-guard-timeline",
   "version": "0.1.0",
-  "homepage": "https://jon-toy.github.io/absolute-guard-timeline",
+  "homepage": "http://ag.spiralseries.gg",
   "private": true,
   "dependencies": {
     "@emotion/react": "11.10.4",
@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-       "deploy": "gh-pages -d build"
+       "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
