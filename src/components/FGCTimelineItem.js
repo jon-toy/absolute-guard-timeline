@@ -72,12 +72,10 @@ export default function FGCTimelineItem({ data }) {
     ""
   );
 
-  console.log(data);
-
   // TODO: Figure out how to include the modal without breaking the alternating timeline item thing
   return (
     <div>
-      <TimelineItem onClick={handleOpen}>
+      <TimelineItem onClick={handleOpen} sx={{ cursor: "pointer" }}>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
           variant="body2"

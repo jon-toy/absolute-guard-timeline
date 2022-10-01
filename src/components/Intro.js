@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import { TagCloud } from "react-tagcloud";
+import "./styles.css";
 
 const data = [
   { value: "Lukesballs", count: 25 },
@@ -29,6 +30,7 @@ const options = {
 };
 
 export default function Intro() {
+  // TODO Get the hover pointer working
   return (
     <Box
       sx={{
@@ -43,6 +45,7 @@ export default function Intro() {
           maxSize={35}
           colorOptions={options}
           tags={data}
+          className="guestTagCloud"
           onClick={(tag) => console.log("clicking on tag:", tag)}
         />
       </p>
