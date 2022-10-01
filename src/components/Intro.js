@@ -9,6 +9,7 @@ export default function Intro() {
       sx={{
         padding: "1em",
         margin: "auto",
+        maxWidth: "800px",
       }}
     >
       <Typography component="div">
