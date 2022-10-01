@@ -1,7 +1,7 @@
 {
   "name": "absolute-guard-timeline",
   "version": "0.1.0",
-  "homepage": "https://jon-toy.github.io/absolute-guard-timeline",
+  "homepage": "ag.spiralseries.gg/absolute-guard-timeline",
   "private": true,
   "dependencies": {
     "@emotion/react": "11.10.4",
