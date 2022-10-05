@@ -13,11 +13,11 @@ import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
 import PersonIcon from "@mui/icons-material/Person";
 import Modal from "@mui/material/Modal";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import FeaturedIn from "./FeaturedIn";
 
 const modalStyle = {
   position: "absolute",
@@ -72,6 +72,11 @@ export default function FGCTimelineItem({ data }) {
     ""
   );
 
+  // Grab all the ep tags
+  const eps = data.tags.filter((tag) => {
+    return tag.match(/ep\d/);
+  });
+
   // TODO: Figure out how to include the modal without breaking the alternating timeline item thing
   return (
     <div>
@@ -116,6 +121,11 @@ export default function FGCTimelineItem({ data }) {
                 ? data.longDescription
                 : ""}
             </Typography>
+            <Typography variant="caption" color="text.secondary">
+              {data.relevantGuests.length > 0
+                ? "Relevant Guests: " + data.relevantGuests
+                : ""}
+            </Typography>
             <Box sx={{ display: "flex", alignItems: "left", pl: 1, pb: 1 }}>
               <TimelineDot
                 color={timelineDotColor}
@@ -134,18 +144,13 @@ export default function FGCTimelineItem({ data }) {
                 </Typography>
               </TimelineContent>
             </Box>
-            <Typography
-              variant="caption"
-              color="text.secondary"
-              component="div"
-            >
-              Relevant Guests: {data.relevantGuests}
-            </Typography>
+            {eps.length > 0 ? "Featured In" : ""}
+            <Container>
+              {eps.map((ep) => (
+                <FeaturedIn data={ep} key={ep} />
+              ))}
+            </Container>
           </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
         </Card>
       </Modal>
     </div>

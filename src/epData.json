@@ -1,0 +1,150 @@
+[
+    {
+      "id": 1,
+      "tag": "ep1",
+      "season": 1,"guests":["Lukesballs"],
+      "title":
+        "Absolute Guard Podcast Episode 1: Frame Data, Magazines, and AZ SF2 with OldManRiver",
+      "youtube": "https://www.youtube.com/watch?v=N5TTkQuOUCY",
+      "spotify":
+        "https://open.spotify.com/episode/2MyHzLvfFCGGXHuZvQkXHf?si=f344fb76c1ba456c"
+    },
+    {
+      "id": 2,
+      "tag": "ep2",
+      "season": 1,"guests":["Rickdawg"],
+      "title":
+        "Absolute Guard Podcast Episode 2: Coaching, Community, and Bans with Rickdawg",
+      "youtube": "https://www.youtube.com/watch?v=U_4Y1TqOd4E",
+      "spotify":
+        "https://open.spotify.com/episode/7feidq5xErfuRQKkNX17Cv?si=85ad75ac64184dd3"
+    },
+    {
+      "id": 3,
+      "tag": "ep3",
+      "season": 1,"guests":["Shaundude", "WillGetPaid"],
+      "title":
+        "Absolute Guard Podcast Episode 3: Pre-Evo stories and AZ Tekken 10v10 with Shaundude and WillGetPaid",
+      "youtube": "https://www.youtube.com/watch?v=xYVZJ7dW17A",
+      "spotify":
+        "https://open.spotify.com/episode/5HBcwZqnYwBbvBtpyFSPpX?si=6fc3344f734a4650"
+    },
+    {
+      "id": 4,
+      "tag": "ep4",
+      "season": 1,"guests":[],
+      "title":
+        "Absolute Guard Drinkcast Episode 4: GameOn Expo and Evo with Drinks",
+      "youtube": "https://www.youtube.com/watch?v=LAoOMOQsSFM",
+      "spotify":
+        "https://open.spotify.com/episode/08EcnnopeD9swWqsd9QLBI?si=69dde28f1a3a4257"
+    },
+    {
+      "id": 5,
+      "tag": "ep5",
+      "season": 1,"guests":["Sabre"],
+      "title":
+        "Absolute Guard Podcast Episode 5: Fighting Game and Evo 2022 Retrospective with SabreAZ",
+      "youtube": "https://www.youtube.com/watch?v=d9ZMBko18y4",
+      "spotify":
+        "https://open.spotify.com/episode/3R2s9Y6Faxiug3UfkXt5DZ?si=275024f50eb94267"
+    },
+    {
+      "id": 6,
+      "tag": "ep6",
+      "season": 1,"guests":[],
+      "title":
+        "Absolute Guard Drinkcast Episode 6: Jon and Benny's Tournament Experiences with Drinks",
+      "youtube": "https://www.youtube.com/watch?v=tcv2jo2_VPU",
+      "spotify":
+        "https://open.spotify.com/episode/6x5z4d4jYNN7FnXoN250dT?si=307db37b41724b37"
+    },
+    {
+      "id": 7,
+      "tag": "ep7",
+      "season": 1,"guests":["DragonNinja"],
+      "title":
+        "Absolute Guard Podcast Episode 7: DOA, Free to Play, Developer Support and the Value of Community with Dragon Ninja",
+      "youtube": "https://www.youtube.com/watch?v=t_uhDSE8_V8",
+      "spotify":
+        "https://open.spotify.com/episode/3sdIAB7rbKepF5oTL2k0aA?si=df3d1d837c174113"
+    },
+    {
+      "id": 8,
+      "tag": "ep8",
+      "season": 1,"guests":["RochKiss"],
+      "title":
+        "Absolute Guard Podcast Episode 8: The Competitive Art of Fighting Games (and Hitbox) with Roch Kiss",
+      "youtube": "https://www.youtube.com/watch?v=tbLaCmdaXSI",
+      "spotify":
+        "https://open.spotify.com/episode/4s7rTiOiwkRjZVH20Keroq?si=979f1015f6fb4e9c"
+    },
+    {
+      "id": 9,
+      "tag": "ep9",
+      "season": 1,"guests":["FrankAZHP"],
+      "title":
+        "Absolute Guard Podcast Episode 9: The Pros and Cons of TOing with FrankAZHP",
+      "youtube": "https://www.youtube.com/watch?v=JrH1JBR9VxQ",
+      "spotify":
+        "https://open.spotify.com/episode/0lNCAuZHafvjBURz03Ei2j?si=98cea48dd7664459"
+    },
+    {
+      "id": 10,
+      "tag": "ep10",
+      "season": 1,"guests":["Driftwood"],
+      "title":
+        "Absolute Guard Podcast Episode 10: Rewired and Fencing with Driftwood",
+      "youtube": "https://www.youtube.com/watch?v=6grYcZujF44",
+      "spotify":
+        "https://open.spotify.com/episode/3G90vrxGI41G4fLO1UaJSy?si=45498937e1b44d55"
+    },
+    {
+      "id": 11,
+      "tag": "ep11",
+      "season": 1,"guests":["KingHippo"],
+      "title":
+        "Absolute Guard Podcast Episode 11: AZ NRS and Blogging with KingHippo",
+      "youtube": "https://www.youtube.com/watch?v=pUQOMJhccvY",
+      "spotify":
+        "https://open.spotify.com/episode/1Jzdh68AebMfZqXXpaG8P9?si=72618b6f31814882"
+    },
+    {
+      "id": 12,
+      "tag": "ep12",
+      "season": 1,"guests":[],
+      "title":
+        "Absolute Guard Drinkcast Episode 12: Behind the Scenes and in the Sky with Drinks",
+      "youtube": "https://www.youtube.com/watch?v=sME_i9R4cIY&t=183s",
+      "spotify":
+        "https://open.spotify.com/episode/0gd3jEcAQTL3Oq1NWPqLgF?si=7009f40f59384041"
+    },
+    {
+      "id": 13,
+      "tag": "ep13",
+      "season": 1,"guests":["NinjaNam"],
+      "title":
+        "Absolute Guard Drinkcast Episode 13: NinjaNam's Skills Across the Genre and Behind the Mic",
+      "youtube": "https://www.youtube.com/watch?v=nD4i4GIIYQU",
+      "spotify":
+        "https://open.spotify.com/episode/4cGDNLUayMIFEG4cEd27rh?si=dc756f3acb7f4df3"
+    },
+    {
+      "id": 14,
+      "tag": "ep14",
+      "season": 1,"guests":["Nefertiti"],
+      "title":
+        "Absolute Guard Podcast Episode 14: Running a Fighting Game Club with Madam President Nefertiti",
+      "youtube": "https://www.youtube.com/watch?v=jX_5yIyKfQQ",
+      "spotify":
+        "https://open.spotify.com/episode/5aNwBzwlysFFDI0b0K1IBx?si=64c4bd99c0084e97"
+    },
+    {
+      "id": 15,
+      "tag": "ep15",
+      "season": 1,"guests":[],
+      "title": "",
+      "youtube": "",
+      "spotify": ""
+    }
+  ]

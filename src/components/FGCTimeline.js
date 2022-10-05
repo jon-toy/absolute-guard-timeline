@@ -76,8 +76,14 @@ export default function FGCTimeline({ rows, filters, controls }) {
     }
 
     // Assign unique identifiers to each node (for convenience)
+    // Convert tags to an array
     ret = ret.map((event) => {
       event.id = Math.floor(Math.random() * 100000000000);
+      if (event.tags && !Array.isArray(event.tags)) {
+        event.tags = event.tags.split(",").map((tag) => tag.trim());
+      } else if (!Array.isArray(event.tags)) {
+        event.tags = [];
+      }
       return event;
     });
 

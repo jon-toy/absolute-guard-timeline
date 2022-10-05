@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import { TagCloud } from "react-tagcloud";
 import "./styles.css";
+import epData from "../epData.json";
 
 const data = [
   { value: "Lukesballs", count: 25 },
@@ -29,6 +30,11 @@ const options = {
   alpha: 0.5, // e.g. 'rgba(9, 1, 107, 0.5)',
 };
 
+function openTag(tag) {
+  const ep = epData.find((ep) => ep.guests.includes(tag.value));
+  if (ep && ep.youtube) window.open(ep.youtube);
+}
+
 export default function Intro() {
   // TODO Get the hover pointer working
   return (
@@ -46,7 +52,7 @@ export default function Intro() {
           colorOptions={options}
           tags={data}
           className="guestTagCloud"
-          onClick={(tag) => console.log("clicking on tag:", tag)}
+          onClick={(tag) => openTag(tag)}
         />
       </p>
       <Typography component="div">
